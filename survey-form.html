@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Technical Page</title>
+    <link rel="stylesheet" href="survey-form-style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1 id="title">Online Dating Survey</h1>
+    <p id="description">We appreciate you for taking the time to share your experience with us!</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-element"><label id="name-label" for="name">Name:</label>
+      <input type="text" required id="name" name="user_name" placeholder="Enter name here" class="form-field"/>
+    </div>
+    <div class="form-element"><label id="email-label" for="email">Email:</label>
+      <input type="email" required id="email" name="user_email" placeholder="Enter email here" class="form-field"/>
+    </div>
+    <div class="form-element"> <label id="number-label" for="number">Age:</label>
+      <input type="number" id="number" name="user_age" placeholder="Enter your age" min="10" max="99"/ class="form-field">
+    </div>
+    <div>
+      <p>Please indicate your gender</p>
+        <label><input class="input-radio" type="radio" name="gender" value="male" checked/>Male</label>
+        <label><input class="input-radio" type="radio" name="gender" value="female" checked/>Female</label>
+        <label><input class="input-radio" type="radio" name="gender" value="female" checked/>Other</label> 
+    </div>
+  <div>
+    <p>Which online dating site or application do you use most often?</p>
+    <label><input type="text" id="answer" name="answer" class="form-field"/></label>
+  </div>
+  <div>
+    <p>Do you pay for using the dating app?</p>
+    <label><input type="radio" name="pay" value="yes" checked/>Yes</label>
+    <label><input type="radio" name="pay" value="no" checked/>No</label>
+  </div>
+  <div>
+    <p>In a typical week, how much of your time do you spend in online dating site or application?</p>
+    <select id="dropdown" name="time">
+      <option disabled selected value>Please select</option>
+      <option value="less2">Less than hours</option>
+      <option value="2-5">2-5</option>
+      <option value="6-10">6-10</option>
+      <option value="11-15">11-15</option>
+      <option value="over15">Over 15</option>
+    </select>
+  </div>
+    <div>
+    <p>Have you ever developed a relationship with someone from an online dating site or app?</p>
+    <label><input class="input-radio" type="radio" name="relationship" value="yes" checked/>Yes</label>
+    <label><input class="input-radio" type="radio" name="relationship" value="no" checked/>No</label>
+  </div>
+  <div>
+    <p>What kind of relationship are you looking for when surfing on the dating website or app?</p>
+    <label><input class="input-checkbox" type="checkbox" name="goal" value="lasting-relationship"/>looking for lasting relationship</label>
+    <label><input class="input-checkbox" type="checkbox" name="goal" value="friendship"/>looking for friendship</label>
+    <label><input class="input-checkbox" type="checkbox" name="goal" value="hookups"/>looking for hookups</label>
+    </div>
+   <div>
+    <p>Would you recommend online dating to you friends?</p>
+    <label><input class="input-radio" type="radio" name="recommend" value="yes" checked/>Yes</label>
+    <label><input class="input-radio" type="radio" name="recommend" value="no" checked/>No</label>
+  </div> 
+  <div>
+    <p>Any additional thoughts or comments you want to make about online dating?</p>
+    <textarea id="comment" name="comment" placeholder="Type here..."></textarea>
+    </div>
+    <div>
+      <button type="submit" id="submit">Submit</button>
+    </div>
+  </form>
+  </body>
